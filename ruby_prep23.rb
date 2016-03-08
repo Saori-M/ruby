@@ -9,11 +9,13 @@ newary.each {|value|
       count = count + 1
     end
   }
-  overlap[i] = count
+  if count > 1
+    overlap[i] = count
+  end
 }
-print (overlap)
+overlap
 end
 
 
-ary = [1, 2, 5, 2, 3, 5]
+ary = [1, 2, 5, 2, 3, 5,3,4,4,3,3]
 overlap (ary)
