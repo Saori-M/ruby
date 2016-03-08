@@ -1,7 +1,23 @@
 def overlap (array)
 newary = array.uniq
-sort = newary.sort
-print (sort)
+overlap = {}
+answer = []
+newary.each {|value|
+  i = value
+  count = 0
+  array.each {|value|
+    if value == i
+      count = count + 1
+    end
+  }
+  overlap[i] = count
+}
+overlap.each{|key,value|
+  if value != 1
+    answer.push(key)
+  end
+}
+print (answer)
 end
 
 
