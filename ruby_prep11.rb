@@ -7,7 +7,7 @@ def sum (array)
       break
     end
   }
-print (i)
+i
 end
 
 t = [1, 2, 3, 4, 5, 6]
